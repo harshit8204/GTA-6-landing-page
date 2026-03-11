@@ -1,16 +1,38 @@
 # 🎮 GTA 6 — Fan Landing Page
 
-A visually stunning fan-made landing page for Grand Theft Auto VI, built with React and Vite.
+<div align="center">
+
+![GTA VI](https://img.shields.io/badge/GTA%20VI-Fan%20Project-orange?style=for-the-badge&logoColor=white)
+![React](https://img.shields.io/badge/React-18-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-88%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-8%25-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+**A cinematic, fan-made landing page for Grand Theft Auto VI — built with React and Vite.**
+
+[🐛 Report Bug](https://github.com/harshit8204/GTA-6-landing-page/issues) &nbsp;·&nbsp; [✨ Request Feature](https://github.com/harshit8204/GTA-6-landing-page/issues)
+
+</div>
+
+---
+
+## 📸 Preview
+
+> 💡 Add a screenshot by placing `preview.png` in the `public/` folder and uncommenting below:
+>
+> <!-- ![GTA 6 Landing Page Preview](./public/preview.png) -->
+
 ---
 
 ## 📌 Table of Contents
 
-- [About the Project](#-about-the-project)
+- [About](#-about)
 - [Tech Stack](#-tech-stack)
 - [Features](#-features)
 - [Project Structure](#-project-structure)
 - [Getting Started](#-getting-started)
 - [Available Scripts](#-available-scripts)
+- [Deployment](#-deployment)
 - [Contributing](#-contributing)
 - [Author](#-author)
 - [License](#-license)
@@ -18,34 +40,36 @@ A visually stunning fan-made landing page for Grand Theft Auto VI, built with Re
 
 ---
 
-## 🕹️ About the Project
+## 🕹️ About
 
-This is a **fan-made, non-commercial landing page** inspired by Rockstar Games' Grand Theft Auto VI. It was built as a frontend practice project to explore modern React development, cinematic UI design, and smooth animations.
+This is a **fan-made, non-commercial landing page** inspired by Rockstar Games' **Grand Theft Auto VI**. The project was built to practice modern React development, cinematic UI/UX design, smooth animations, and component-based architecture — all powered by the lightning-fast Vite build tool.
 
-> ⚠️ This project is **not affiliated with or endorsed by Rockstar Games**. All GTA branding belongs to their respective owners.
+> ⚠️ This project is **not affiliated with or endorsed by Rockstar Games or Take-Two Interactive**.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| ⚛️ React | 18+ | UI Components & State |
-| ⚡ Vite | 5+ | Build Tool & Dev Server |
-| 🎨 CSS3 | — | Styling & Animations |
-| 🔍 ESLint | — | Code Quality |
-| 📦 JavaScript | ES2022+ | Core Logic |
+| Technology | Role |
+|------------|------|
+| ⚛️ **React 18** | Component-based UI & state management |
+| ⚡ **Vite 5** | Build tooling, dev server & HMR |
+| 🎨 **CSS3** | Custom styling & animations |
+| 🌐 **HTML5** | Semantic markup via `index.html` |
+| 🔍 **ESLint** | Linting & code quality enforcement |
 
 ---
 
 ## ✨ Features
 
-- 🎬 **Cinematic hero section** with immersive visuals
-- 🎥 **Trailer embed** section
-- 📱 **Fully responsive** — works on mobile, tablet & desktop
-- 🌑 **Dark themed UI** inspired by the GTA 6 aesthetic
-- ⚡ **Blazing fast** with Vite's Hot Module Replacement (HMR)
-- 🧩 **Component-based** React architecture
+- 🎬 **Cinematic Hero Section** — full-screen immersive visuals
+- 🎥 **Trailer Section** — embedded GTA 6 trailer
+- 🗺️ **Vice City Showcase** — location/world highlights
+- 🌑 **Dark Theme UI** — inspired by GTA VI's aesthetic
+- 📱 **Fully Responsive** — mobile, tablet & desktop
+- ⚡ **Hot Module Replacement** — instant updates during development
+- 🧩 **Reusable Components** — clean, modular React architecture
+- 🚀 **Production-ready Build** — optimized bundle via Vite
 
 ---
 
@@ -54,48 +78,62 @@ This is a **fan-made, non-commercial landing page** inspired by Rockstar Games' 
 ```
 GTA-6-landing-page/
 │
-├── public/                  # Static assets (images, icons, fonts)
-│   └── ...
+├── public/                     # Static assets served as-is
+│   └── (images, videos, icons)
 │
-├── src/                     # Source code
-│   ├── components/          # Reusable React components
-│   │   └── ...
-│   ├── assets/              # Images and media used in components
-│   ├── App.jsx              # Root component
-│   ├── App.css              # App-level styles
-│   └── main.jsx             # React entry point
+├── src/                        # All React source code
+│   ├── components/             # Reusable UI components
+│   │   ├── Navbar.jsx          # Top navigation bar
+│   │   ├── Hero.jsx            # Hero / banner section
+│   │   ├── Trailer.jsx         # Trailer embed section
+│   │   ├── Features.jsx        # Game features highlights
+│   │   └── Footer.jsx          # Page footer
+│   │
+│   ├── assets/                 # Images & media imported in components
+│   ├── App.jsx                 # Root component — assembles all sections
+│   ├── App.css                 # Global app-level styles
+│   └── main.jsx                # React DOM entry point
 │
-├── index.html               # HTML template
-├── vite.config.js           # Vite configuration
-├── eslint.config.js         # ESLint rules
-├── package.json             # Project dependencies & scripts
-└── README.md                # Project documentation
+├── index.html                  # HTML shell / entry for Vite
+├── vite.config.js              # Vite build & dev configuration
+├── eslint.config.js            # ESLint rules
+├── package.json                # Project metadata & npm scripts
+├── package-lock.json           # Locked dependency tree
+└── README.md                   # Project documentation
 ```
+
+> **Note:** Component names above are representative — update them to match your actual files inside `src/components/`.
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites
 
-Ensure you have installed:
+Make sure you have:
 
 - [Node.js](https://nodejs.org/) **v16 or higher**
-- **npm** (comes with Node.js) or **yarn**
+- **npm** (bundled with Node.js) or **yarn**
 
-### Installation
+Check your versions:
+```bash
+node -v
+npm -v
+```
+
+### 📥 Installation
 
 **1. Clone the repository**
 ```bash
 git clone https://github.com/harshit8204/GTA-6-landing-page.git
 ```
 
-**2. Navigate into the project**
+**2. Move into the project directory**
 ```bash
 cd GTA-6-landing-page
 ```
 
-**3. Install dependencies**
+**3. Install all dependencies**
 ```bash
 npm install
 ```
@@ -114,33 +152,51 @@ http://localhost:5173
 
 ## 📦 Available Scripts
 
-| Command | Description |
+| Command | What it does |
 |---------|-------------|
-| `npm run dev` | 🔥 Start local development server with HMR |
-| `npm run build` | 📦 Build optimized production bundle |
-| `npm run preview` | 👁️ Preview the production build locally |
-| `npm run lint` | 🔍 Run ESLint for code quality checks |
+| `npm run dev` | 🔥 Starts local dev server with live HMR |
+| `npm run build` | 📦 Compiles optimized production bundle into `dist/` |
+| `npm run preview` | 👁️ Serves the production build locally for testing |
+| `npm run lint` | 🔍 Runs ESLint to check for code issues |
+
+---
+
+## 🌍 Deployment
+
+To deploy your production build:
+
+```bash
+npm run build
+```
+
+This generates a `dist/` folder. You can then deploy it to:
+
+| Platform | Command / Guide |
+|----------|----------------|
+| **Vercel** | `vercel --prod` or connect GitHub repo |
+| **Netlify** | Drag & drop `dist/` or connect GitHub repo |
+| **GitHub Pages** | Use `gh-pages` npm package |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how to get started:
+Contributions, issues and feature requests are welcome!
 
-1. **Fork** the repository
-2. **Create** your feature branch
+1. **Fork** this repository
+2. **Create** a new branch
    ```bash
-   git checkout -b feature/amazing-feature
+   git checkout -b feature/your-feature-name
    ```
-3. **Commit** your changes
+3. **Commit** your changes with a clear message
    ```bash
-   git commit -m "feat: add amazing feature"
+   git commit -m "feat: describe what you added"
    ```
 4. **Push** to your branch
    ```bash
-   git push origin feature/amazing-feature
+   git push origin feature/your-feature-name
    ```
-5. **Open** a Pull Request
+5. **Open a Pull Request** on GitHub
 
 ---
 
@@ -148,24 +204,30 @@ Contributions are welcome! Here's how to get started:
 
 **Harshit**
 
+[![GitHub](https://img.shields.io/badge/GitHub-harshit8204-181717?style=flat-square&logo=github)](https://github.com/harshit8204)
+
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is open source and available under the **[MIT License](LICENSE)**.
 
 ---
 
 ## ⚠️ Disclaimer
 
-This is a **fan-made project** created for educational and portfolio purposes only.  
-**Grand Theft Auto VI**, the GTA logo, and all related assets are trademarks of **Rockstar Games / Take-Two Interactive**.  
-This project has **no commercial intent** and is **not affiliated** with Rockstar Games in any way.
+This is a **fan-made, non-commercial project** built purely for educational and portfolio purposes.
+
+**Grand Theft Auto VI**, the GTA name/logo, Vice City, and all related assets are registered trademarks of **Rockstar Games / Take-Two Interactive Software, Inc.**
+
+This project has **no commercial intent** and is **not affiliated with, sponsored by, or endorsed by Rockstar Games** in any way. All rights belong to their respective owners.
 
 ---
 
 <div align="center">
-  Made with ❤️ and a lot of respect for Rockstar Games
-  <br/>
-  ⭐ Star this repo if you like it!
+
+Made with ❤️ and a whole lot of respect for Rockstar Games
+
+⭐ **If you like this project, please give it a star!** ⭐
+
 </div>
