@@ -114,7 +114,7 @@ function App() {
             </mask>
           </defs>
           <image
-            href="./bg.png"
+            href="/bg.png"
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice"
@@ -141,12 +141,12 @@ function App() {
             <div className="imagesdiv relative overflow-hidden w-full h-screen">
               <img
                 className="absolute sky scale-[1.5] rotate-[-20deg] top-0 left-0 w-full h-full object-cover"
-                src="./sky.png"
+                src="/sky.png"
                 alt=""
               />
               <img
                 className="absolute scale-[1.8] rotate-[-3deg] bg top-0 left-0 w-full h-full object-cover"
-                src="./bg.png"
+                src="/bg.png"
                 alt=""
               />
               <div className="text text-white flex flex-col gap-3 absolute top-20 left-1/2 -translate-x-1/2 scale-[1.4] rotate-[-10deg]">
@@ -156,7 +156,7 @@ function App() {
               </div>
               <img
                 className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg]"
-                src="./girlbg.png"
+                src="/girlbg.png"
                 alt=""
               />
             </div>
@@ -169,7 +169,7 @@ function App() {
               </div>
               <img
                 className="absolute h-[55px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                src="./ps5.png"
+                src="/ps5.png"
                 alt=""
               />
             </div>
@@ -179,7 +179,7 @@ function App() {
               <div className="limg relative w-1/2 h-full">
                 <img
                   className="absolute scale-[1.3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                  src="./imag.png"
+                  src="/imag.png"
                   alt=""
                 />
               </div>
