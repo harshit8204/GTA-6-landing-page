@@ -3,6 +3,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "remixicon/fonts/remixicon.css";
 
+const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
+
 function App() {
   let [showContent, setShowContent] = useState(false);
   useGSAP(() => {
@@ -114,7 +116,7 @@ function App() {
             </mask>
           </defs>
           <image
-            href="/bg.png"
+            href={asset("bg.png")}
             width="100%"
             height="100%"
             preserveAspectRatio="xMidYMid slice"
@@ -141,12 +143,12 @@ function App() {
             <div className="imagesdiv relative overflow-hidden w-full h-screen">
               <img
                 className="absolute sky scale-[1.5] rotate-[-20deg] top-0 left-0 w-full h-full object-cover"
-                src="/sky.png"
+                src={asset("sky.png")}
                 alt=""
               />
               <img
                 className="absolute scale-[1.8] rotate-[-3deg] bg top-0 left-0 w-full h-full object-cover"
-                src="/bg.png"
+                src={asset("bg.png")}
                 alt=""
               />
               <div className="text text-white flex flex-col gap-3 absolute top-20 left-1/2 -translate-x-1/2 scale-[1.4] rotate-[-10deg]">
@@ -156,7 +158,7 @@ function App() {
               </div>
               <img
                 className="absolute character -bottom-[150%] left-1/2 -translate-x-1/2  scale-[3] rotate-[-20deg]"
-                src="/girlbg.png"
+                src={asset("girlbg.png")}
                 alt=""
               />
             </div>
@@ -169,7 +171,7 @@ function App() {
               </div>
               <img
                 className="absolute h-[55px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                src="/ps5.png"
+                src={asset("ps5.png")}
                 alt=""
               />
             </div>
@@ -179,7 +181,7 @@ function App() {
               <div className="limg relative w-1/2 h-full">
                 <img
                   className="absolute scale-[1.3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                  src="/imag.png"
+                  src={asset("imag.png")}
                   alt=""
                 />
               </div>
